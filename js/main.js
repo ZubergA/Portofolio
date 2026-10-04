@@ -1,11 +1,3 @@
-/* main.js — Portfolio
- * Vanilla JS only. Features:
- * 1. Active nav link (IntersectionObserver)
- * 2. Mobile menu (toggle, Esc-to-close)
- * 3. Reveal animation (.reveal elements)
- * 4. Reveal-group animation (.reveal-group — section headers stagger)
- * 5. Scroll progress bar
- */
 
 (function () {
   'use strict';
