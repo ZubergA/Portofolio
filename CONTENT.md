@@ -210,7 +210,7 @@ Satu item = satu sertifikat. Bisa sebanyak yang Anda punya.
 
 ## 5. Contact (`#contact`)
 
-- **Kalimat ajakan:** `[I'm looking for Internship, feel free to contact me!]`
+- **Kalimat ajakan:** `[Interested in working together or discussing potential opportunities? Feel free to get in touch.]`
 - **Email:** `[cannavarolie1@email.com]`
 - **GitHub:** `[https://github.com/ZubergA]`
 - **LinkedIn:** `[https://www.linkedin.com/in/cannavaro-lie-0b22b3326]`
