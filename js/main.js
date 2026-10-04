@@ -118,4 +118,38 @@
     updateProgress();
   }
 
+  /* ── 6. COPY EMAIL BUTTON ─────────────────────────────────── */
+  const copyBtn = document.querySelector('.btn-copy-email');
+  if (copyBtn) {
+    const email = copyBtn.getAttribute('data-email') || 'cannavarolie1@email.com';
+    const textSpan = copyBtn.querySelector('.email-text');
+    let timeoutId = null;
+
+    copyBtn.addEventListener('click', async () => {
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(email);
+        } else {
+          const tempInput = document.createElement('input');
+          tempInput.value = email;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand('copy');
+          document.body.removeChild(tempInput);
+        }
+
+        copyBtn.classList.add('is-copied');
+        if (textSpan) textSpan.textContent = 'Copied to clipboard!';
+
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+          copyBtn.classList.remove('is-copied');
+          if (textSpan) textSpan.textContent = email;
+        }, 2000);
+      } catch (err) {
+        console.error('Failed to copy email:', err);
+      }
+    });
+  }
+
 })();

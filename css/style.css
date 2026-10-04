@@ -780,6 +780,28 @@ p { max-width: 65ch; }
   outline-offset: 3px;
 }
 
+button.contact-item {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn-copy-email .check-icon {
+  display: none;
+}
+
+.btn-copy-email.is-copied .email-icon {
+  display: none;
+}
+
+.btn-copy-email.is-copied .check-icon {
+  display: block;
+}
+
+.btn-copy-email.is-copied {
+  background-color: var(--surface-2);
+  border-color: var(--accent);
+}
+
 /* ── FOOTER ───────────────────────────────────────────────── */
 .site-footer {
   border-top: 1px solid var(--border);
