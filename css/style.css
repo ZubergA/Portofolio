@@ -690,6 +690,12 @@ p { max-width: 65ch; }
   color: var(--text-muted);
 }
 
+.cert-status {
+  font-size: 0.75rem;
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
 /* ── CONTACT ──────────────────────────────────────────────── */
 #contact {
   padding-block: var(--section-gap);

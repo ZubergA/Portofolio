@@ -58,7 +58,7 @@
   - `[Scikit-learn]`
   - `[Docker]`
   - `[Git]`
-  - `[Skill 6]`
+  - `[Gradio Client]`
 
 - **Link CV:**
   - Simpan file CV ke `assets/cv.pdf`
