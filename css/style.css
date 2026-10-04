@@ -753,7 +753,7 @@ p { max-width: 65ch; }
 .contact-links {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--sp-3);
+  gap: var(--sp-4);
 }
 
 .contact-item {
