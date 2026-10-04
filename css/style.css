@@ -25,8 +25,7 @@
   --sp-7: 3rem;
   --sp-8: 4rem;
 
-  /* Typography */
-  --font-serif: 'Instrument Serif', Georgia, serif;
+  /* Typography — single font family */
   --font-sans:  'Plus Jakarta Sans', system-ui, sans-serif;
 
   /* Layout */
@@ -75,8 +74,8 @@ a:hover { text-decoration-color: var(--accent); }
 
 /* ── 3. BASE TYPOGRAPHY ───────────────────────────────────── */
 h1, h2 {
-  font-family: var(--font-serif);
-  font-weight: 400;
+  font-family: var(--font-sans);
+  font-weight: 700;
   line-height: 1.12;
   color: var(--text);
 }
@@ -139,11 +138,12 @@ p { max-width: 65ch; }
 }
 
 .site-name {
-  font-family: var(--font-serif);
-  font-size: 1.2rem;
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 700;
   color: var(--text);
   text-decoration: none;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   flex-shrink: 0;
 }
 .site-name:hover { color: var(--accent-strong); }
@@ -358,11 +358,11 @@ p { max-width: 65ch; }
 
 .hero-name {
   font-size: clamp(2.75rem, 7vw, 5rem);
+  font-weight: 800;
   line-height: 1.05;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   margin-bottom: var(--sp-5);
 }
-.hero-name em { font-style: italic; }
 
 .hero-desc {
   font-size: clamp(1rem, 2vw, 1.125rem);
@@ -464,16 +464,27 @@ p { max-width: 65ch; }
   box-shadow: var(--shadow-md);
 }
 
-.project-thumb {
+/* Wrapper: teknik padding-top 56.25% = rasio 16:9 paling reliable */
+.project-thumb-wrap {
+  position: relative;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: center top;
+  padding-top: 56.25%;          /* 9/16 × 100 = 56.25% */
+  overflow: hidden;
   border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
   border-bottom: 1px solid var(--border);
-  display: block;
   background-color: var(--surface-2);
   flex-shrink: 0;
+}
+
+/* Gambar absolute mengisi wrapper sepenuhnya — tidak ada stretch */
+.project-thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
 }
 
 .project-card-body {

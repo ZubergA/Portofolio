@@ -78,7 +78,7 @@ Disarankan 2–4 proyek. Hapus blok yang tidak dipakai.
 | **Tahun** | 2026 |
 | **Deskripsi** | Aplikasi web manajemen keuangan pribadi untuk mencatat, melacak, dan menganalisis transaksi. Fitur: register & login, input pemasukan/pengeluaran, saldo dompet, riwayat transaksi, banyak buku transaksi |
 | **Teknologi / tag** | `Next.js` `React.js` `JavaScript` `HTML` `CSS` `Node.js` `Express` |
-| **Link demo** | https://money-manager-system-fork.vercel.app |
+| **Link demo** | https://moneymanagersystem.vercel.app/ |
 | **Link repo** | https://github.com/ZubergA/Money-Manager-System-fork |
 | **Gambar thumbnail** | `[assets/img/Moneymanager.png]` |
 
@@ -86,11 +86,11 @@ Disarankan 2–4 proyek. Hapus blok yang tidak dipakai.
 
 | Field | Isi |
 
-| **Judul** | Film Sentiment Analysis – NLP AOL Sem 4 |
+| **Judul** | Film Sentiment Analysis |
 | **Tahun** | 2026 |
 | **Deskripsi** | Aplikasi analisis sentimen ulasan film berbasis dataset IMDB. Teks dibersihkan (hapus HTML, stopword, stemming), lalu dibandingkan beberapa model klasifikasi untuk memilih yang terbaik berdasarkan accuracy, F1, dan AUC-ROC. Terdapat deteksi entitas (orang, judul film, organisasi) lewat NER, dengan backend REST API dan dashboard web. |
 | **Teknologi / tag** | `Python` `FastAPI` `scikit-learn` `TF-IDF` `Logistic Regression` `Naive Bayes` `SVM` `Random Forest` `NLTK` `spaCy` `Pandas` `NumPy` `Docker` `Next.js` `React` `TypeScript` `Tailwind CSS` `Recharts` |
-| **Link demo** | https://nlp-sentiment-aol.vercel.app |
+| **Link demo** | https://cinevibesnlp.vercel.app/ |
 | **Link repo** | https://github.com/ZubergA/nlp-sentiment-aol |
 | **Gambar thumbnail** | `[assets/img/Cinevibes.png]` |
 
@@ -102,7 +102,7 @@ Disarankan 2–4 proyek. Hapus blok yang tidak dipakai.
 | **Tahun** | 2025 |
 | **Deskripsi** | Web app untuk mengecek kondisi buah dari foto. Pengguna drag & drop atau upload gambar, lalu hasil prediksi, tingkat keyakinan, dan saran ditampilkan. Inferensi dijalankan oleh model yang di-host di Hugging Face Space. |
 | **Teknologi / tag** | `HTML` `CSS` `JavaScript` `Gradio Client` `Hugging Face Spaces` `Image Classification` |
-| **Link demo** | https://fresh-sense-web.vercel.app |
+| **Link demo** | https://freshsenseweb.vercel.app/ |
 | **Link repo** | https://github.com/ZubergA/FreshSense-Web |
 | **Gambar thumbnail** | `[assets/img/Freshsense.png]` |
 
