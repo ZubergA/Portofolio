@@ -463,6 +463,16 @@ p { max-width: 65ch; }
   box-shadow: var(--shadow-md);
 }
 
+.project-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
+  border-bottom: 1px solid var(--border);
+  display: block;
+  background-color: var(--surface-2);
+}
+
 .project-card-body {
   padding: var(--sp-5);
   flex: 1;
