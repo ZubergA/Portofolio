@@ -446,6 +446,7 @@ p { max-width: 65ch; }
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--sp-5);
+  align-items: stretch;
 }
 
 .project-card {
@@ -465,12 +466,14 @@ p { max-width: 65ch; }
 
 .project-thumb {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 200px;
   object-fit: cover;
+  object-position: center top;
   border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
   border-bottom: 1px solid var(--border);
   display: block;
   background-color: var(--surface-2);
+  flex-shrink: 0;
 }
 
 .project-card-body {
@@ -804,7 +807,7 @@ p { max-width: 65ch; }
   }
 
   .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
